@@ -1,5 +1,6 @@
 public class Salesperson extends Employee{
 private int tar,ince;
+private string name;
 public Salesperson()
 {
 	super();
@@ -12,6 +13,7 @@ public Salesperson(String name,int Idno,int salary,int tar,int ince)
 	this.tar=tar;
 	this.ince=ince;
 }
+//***************************************
 public String toString()
 {
 	String str;
