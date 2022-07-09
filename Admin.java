@@ -1,7 +1,12 @@
 package Emp;
 
-public class Admin extends Employee {
+public class Admin extends Employee 
+{
 		private int bonus;
+		public Admin()
+		{
+
+		}
 		
 		public Admin(String name,int Idno,double salary,int bonus)
 		{
@@ -16,6 +21,7 @@ public class Admin extends Employee {
 			return str;
 		}
 		
+		//Calculate Salary Method
 	public double calsal() 
 	{
 		double netsal;
