@@ -1,0 +1,27 @@
+public class Salesperson extends Employee{
+private int tar,ince;
+public Salesperson()
+{
+	super();
+	tar=0;
+	ince=0;
+	}
+public Salesperson(String name,int Idno,int salary,int tar,int ince)
+{
+	super(name,Idno,salary);
+	this.tar=tar;
+	this.ince=ince;
+}
+public String toString()
+{
+	String str;
+	str="\n"+super.toString()+"\t"+tar+"\t"+ince;
+	return str;
+}
+public void calsal()
+{
+	double netsal;
+	netsal=salary+(tar*ince);
+	System.out.println("Net salary is :"+netsal);
+}
+}
